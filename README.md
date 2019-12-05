@@ -30,4 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1. npm install ng-drag-drop --save
 
-2. 
+2. npm install firebase angularfire2 --save
+
