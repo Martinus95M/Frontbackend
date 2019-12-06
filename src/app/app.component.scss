@@ -1,4 +1,10 @@
 main {
-    background-color: red;
-    height: 1000px;
+    .container {
+        .row {
+            div {
+                margin: 5%;
+                background: red;
+            }
+        }
+    }
 }
