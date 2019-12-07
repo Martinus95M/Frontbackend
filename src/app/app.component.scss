@@ -1,9 +1,33 @@
 main {
-    .container {
-        .row {
-            div {
-                margin: 5%;
-                background: red;
+    .wrapper {
+        position: relative;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+        a {
+            .game {
+                position: fixed;
+                left: 0;
+                right: 0;
+                height: 50%;
+
+
+                h1 {
+                    position: absolute;
+                    top: 90%;
+                    left: 90%;
+                    transform: translate(-90%, -90%);
+                    color: #fff;
+                }
+            }
+            #top {
+                top: 0;
+                background-color: orange;
+            }
+            #bottom {
+                bottom: 0;
+                background-color: green;
             }
         }
     }
