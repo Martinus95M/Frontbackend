@@ -1,3 +1,52 @@
-h1 {
+.header {
+    height: 100px;
+    margin-top: 10px;
+    font-size: 4em;
+}
+
+.questionAttempt {
+    float: left;
+    color: blue;
+    margin-left: 2%;
+}
+
+.currentPoints {
+    float: right;
     color: red;
+    margin-right: 2%;
+}
+
+.questionDisplay {
+    text-align: center;
+    margin-top: 0;
+}
+
+.dropField {
+    margin-top: 100px;
+    height: 150px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.questionOptions {
+    margin-left: 12.5%;
+    margin-top: 80px;
+    text-align: center;
+
+    .dragField {
+        height: 150px;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 48px;
+        font-size: 2em;
+    }
+}
+
+.returnToStart {
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 2px;
+    float: right;
+    text-align: center;
+    font-size: 1.5em;
 }
