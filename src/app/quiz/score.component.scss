@@ -1,0 +1,40 @@
+.header {
+    margin-top: 0;
+}
+
+.scoreList {
+    margin-left: 25%;
+    margin-top: 80px;
+    text-align: center;
+
+    .scorePlayerList {
+        border-style: solid;
+        border-width: 2px;
+        font-size: 2em;
+
+        .scorePlayer {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .playerNumber {
+                text-align: left;
+            }
+            .playerName {
+                text-align: center;
+            }
+            .playerPoint {
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+.returnToStart {
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 2px;
+    float: right;
+    text-align: center;
+    font-size: 1.5em;
+}
