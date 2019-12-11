@@ -1,8 +1,22 @@
-div {
-    padding: 5em;
+.boks {
+    width: 90%;
+    padding: 1em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid blue;
+    h1 {
+        text-align: center;
+    }
+    p {
+        
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+        button {
+            margin: 1rem;
+        }
+    }
 }
