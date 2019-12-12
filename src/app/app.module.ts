@@ -12,6 +12,12 @@ import { config, from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { QuizUserComponent } from './quiz-user/quiz-user.component';
 
+//Memory Game
+import { MemoryComponent } from "./memory/memory.component";
+import { CardComponent } from "./memory/cards/card.component";
+import { CardsComponent } from "./memory/cards/cards.component";
+import { CardsService } from "./memory/cards/cards.service";
+
 
 
 // Your web app's Firebase configuration
@@ -30,7 +36,10 @@ var firebaseConfig = {
   declarations: [
     AppComponent,
     QuizUserComponent,
-    HomeComponent
+    HomeComponent,
+    CardsComponent,
+    CardComponent,
+    MemoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +47,7 @@ var firebaseConfig = {
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [CardsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
