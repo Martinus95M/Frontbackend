@@ -4,9 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AngularFireModule } from 'angularfire2'
-import { AngularFirestoreModule } from 'angularfire2/firestore'
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { config } from 'rxjs';
+
+import { ScoresComponent } from './scoreboard.component';
+import { routing } from './app.routing';
 
 
 // Your web app's Firebase configuration
@@ -23,13 +26,15 @@ var firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScoresComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(config),
-    AngularFirestoreModule
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

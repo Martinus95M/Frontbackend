@@ -1,0 +1,18 @@
+<h1>Scores</h1>
+<button class="btn btn-primary" (click)="add()">Add</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Place</th>
+            <th>Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let score of scores | async">
+            <td>#{{ score.place }}</td>
+            <td>{{ score.name }}</td>
+            <td>{{ score.points }}</td>
+        </tr>
+    </tbody>
+</table>
