@@ -12,6 +12,12 @@ import { config, from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { QuizUserComponent } from './quiz-user/quiz-user.component';
 
+import { PlayComponent } from './quiz/play.component';
+import { QuestionsService } from './quiz/questions/questions.service';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatCardModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 
 
@@ -31,15 +37,19 @@ var firebaseConfig = {
   declarations: [
     AppComponent,
     QuizUserComponent,
-    HomeComponent
+    HomeComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    DragDropModule
   ],
-  providers: [],
+  providers: [QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
