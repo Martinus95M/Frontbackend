@@ -1,13 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
+
 import { PlayComponent } from './play.component';
 
 describe('PlayComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        PlayComponent
-      ],
-    }).compileComponents();
+    declarations: [PlayComponent],
+    })
+    .compileComponents();
   }));
 
   it('should create the app', () => {

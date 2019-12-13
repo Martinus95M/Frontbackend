@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
 import { config } from 'rxjs';
+
+// import { HomeComponent } from './home/home.component';
+// import { QuizUserComponent } from './quiz-user/quiz-user.component';
+import { PlayComponent } from './quiz/play.component';
+
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatCardModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -26,7 +31,10 @@ var firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //QuizUserComponent,
+    //HomeComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
