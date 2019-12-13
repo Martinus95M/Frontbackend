@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../node_modules/ng-drag-drop/style.css">
-
 <div class="header container-fluid">
     <p class="questionAttempt">1.</p>
     <p class="currentPoints">500</p>
@@ -13,7 +11,11 @@
     </div>
 
     <div class="container-fluid">
-        <div class="questionOptions row col-md-6 align-self-center justify-content-center">
+        <div class="questionOptions row col-md-6 align-self-center justify-content-center" cdkDropList
+        #dropzoneList="cdkDropList"
+        [cdkDropListData]="control"
+        [cdkDropListConnectedTo]="[doneList]"
+        (cdkDropListDropped)="onDrop($event)">
             <div class="dragField col-6 draggable">20% af al CO2 udledning</div>
             <div class="dragField col-6 draggable">40% af al CO2 udledning</div>
             <div class="dragField col-6 draggable">60% af al CO2 udledning</div>
@@ -23,3 +25,48 @@
 </section>
 
 <section class="returnToStart col-2">Tilbage til start</section>
+
+
+
+
+<div class="container">
+    <h1>{{title}}</h1>
+  
+    <div class="list-container">
+  
+      <div class="dropzone-container column-container">
+        <div class="list"
+             cdkDropList
+             #dropzoneList="cdkDropList"
+             [cdkDropListData]="control"
+             [cdkDropListConnectedTo]="[doneList]"
+             (cdkDropListDropped)="onDrop($event)">
+          <h2>Tech to learn</h2>
+          <mat-card *ngFor="let dropzone of control" cdkDrag>
+            <mat-card-header>
+              <mat-card-title>{{dropzone.name}}</mat-card-title>
+              <mat-card-subtitle>{{dropzone.category}}</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+        </div>
+      </div>
+  
+      <div class="done-container column-container">
+        <div class="list"
+             cdkDropList
+             #doneList="cdkDropList"
+             [cdkDropListData]="answers"
+             [cdkDropListConnectedTo]="dropzoneList"
+             (cdkDropListDropped)="onDrop($event)">
+          <h2>Tech learned</h2>
+          <mat-card *ngFor="let answer of answers" cdkDrag>
+            <mat-card-header>
+              <mat-card-title>{{answer.name}}</mat-card-title>
+              <mat-card-subtitle>{{answer.category}}</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+        </div>
+      </div>
+  
+    </div>
+  </div>

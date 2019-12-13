@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
 import { config } from 'rxjs';
-import { NgDragDropModule } from 'ng-drag-drop';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatCardModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 // Your web app's Firebase configuration
@@ -31,7 +33,9 @@ var firebaseConfig = {
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule,
-    NgDragDropModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
