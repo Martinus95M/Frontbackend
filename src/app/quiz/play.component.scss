@@ -26,6 +26,7 @@
     height: 150px;
     border-style: solid;
     border-width: 2px;
+    margin-left: 25%;
 
     p {
         font-size: 2em;
@@ -92,7 +93,7 @@
   
   
   mat-card {
-    margin: 1em;
+    margin: 0;
     cursor: pointer;
   }
   

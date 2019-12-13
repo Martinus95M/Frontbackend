@@ -7,7 +7,7 @@
     <h1 class="questionDisplay col-lg-12">Hvor meget CO2 udledning står flytrafik for?</h1>
 
     <div class="dropFieldContainer container-fluid col-md-9 ">
-        <div class="dropField container-fluid col-md-6"><p>Træk svar hertil og slip</p></div>
+        <mat-card class="dropField container-fluid col-md-6"></mat-card>
     </div>
 
     <div class="container-fluid">
@@ -16,15 +16,15 @@
         [cdkDropListData]="control"
         [cdkDropListConnectedTo]="[doneList]"
         (cdkDropListDropped)="onDrop($event)">
-            <div class="dragField col-6 draggable">20% af al CO2 udledning</div>
-            <div class="dragField col-6 draggable">40% af al CO2 udledning</div>
-            <div class="dragField col-6 draggable">60% af al CO2 udledning</div>
-            <div class="dragField col-6 draggable">80% af al CO2 udledning</div>
+            <mat-card class="dragField col-6" cdkDrag>20% af al CO2 udledning</mat-card>
+            <mat-card class="dragField col-6" cdkDrag>40% af al CO2 udledning</mat-card>
+            <mat-card class="dragField col-6" cdkDrag>60% af al CO2 udledning</mat-card>
+            <mat-card class="dragField col-6" cdkDrag>80% af al CO2 udledning</mat-card>
         </div>
     </div>
 </section>
 
-<section class="returnToStart col-2">Tilbage til start</section>
+<button class="returnToStart col-2">Tilbage til start</button>
 
 
 
