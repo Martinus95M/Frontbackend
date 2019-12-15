@@ -2,9 +2,10 @@ import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'card',
-    template: ` <div class="card">
+    styleUrls: ['./card.component.scss'],
+    template: ` <div class="sc-card">
                     <img class="cardfront" src="{{data.imageUrl}}" alt="billede af {{data.cardName}}">
-                    <img id="cardback" class="cardback" src="../../assets/img/seven.svg" alt="Background of card">
+                    <img class="cardback" src="../../assets/img/seven.svg" alt="Background of card">
                 </div> 
                 `
 

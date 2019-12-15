@@ -1,0 +1,17 @@
+.container {
+    background-color: red;
+    
+    .gridcontainer{
+        margin-top: 20vh;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+
+        background-color: blue;
+
+        .griditem{
+            position: relative;
+
+        }
+    }
+}
