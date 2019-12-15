@@ -43,3 +43,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
     npm install firebase angularfire2 --save
 
+    sc add. npm install --save-dev @types/jquery
+

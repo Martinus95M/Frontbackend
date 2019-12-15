@@ -4,8 +4,8 @@ import { Component, Input } from "@angular/core";
     selector: 'card',
     styleUrls: ['./card.component.scss'],
     template: ` <div class="sc-card">
-                    <img class="cardfront" src="{{data.imageUrl}}" alt="billede af {{data.cardName}}">
-                    <img class="cardback" src="../../assets/img/seven.svg" alt="Background of card">
+                    <img (click)="onClick($event)" class="cardback" src="../../assets/img/seven.svg" alt="Background of card">
+                    <img id="cardfront" src="{{data.imageUrl}}" alt="billede af {{data.cardName}}">
                 </div> 
                 `
 
@@ -14,6 +14,15 @@ import { Component, Input } from "@angular/core";
 
 export class CardComponent {
     @Input() data;
+
+
+    onClick($event){
+        console.log("clicked",$event);
+
+        $('img').addClass('no-show');
+
+    }
+
 
     // log(){
     //     console.log("nice?")

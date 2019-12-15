@@ -8,7 +8,7 @@ import { CardsService } from "./cards.service";
     <div class="container">
         <div class="gridcontainer">
             <div class="griditem" *ngFor="let card of cards">
-                <card[data]="card"></card>
+                <card [data]="card"></card>
             </div>
         </div>
     </div>
