@@ -3,27 +3,51 @@ export class CardsService {
         return[
             {
                 imageUrl: "../../assets/img/beach.svg",
-                cardName: "Beach",
+                cardName: "Beach1",
             },
             {
                 imageUrl:"../../assets/img/iceberg.svg",
-                cardName:"Iceberg",
+                cardName:"Iceberg1",
             },
             {
                 imageUrl:"../../assets/img/mountains.svg",
-                cardName:"Mountains",
+                cardName:"Mountains1",
             },
             {
                 imageUrl:"../../assets/img/waterfall.svg",
-                cardName:"waterfall",
+                cardName:"waterfall1",
             },
             {
                 imageUrl:"../../assets/img/windmills.svg",
-                cardName:"Windmills",
+                cardName:"Windmills1",
             },
             {
                 imageUrl:"../../assets/img/desert.svg",
-                cardName:"Dessert",
+                cardName:"Dessert1",
+            },
+            {
+                imageUrl: "../../assets/img/beach.svg",
+                cardName: "Beach2",
+            },
+            {
+                imageUrl:"../../assets/img/iceberg.svg",
+                cardName:"Iceberg2",
+            },
+            {
+                imageUrl:"../../assets/img/mountains.svg",
+                cardName:"Mountains2",
+            },
+            {
+                imageUrl:"../../assets/img/waterfall.svg",
+                cardName:"waterfall2",
+            },
+            {
+                imageUrl:"../../assets/img/windmills.svg",
+                cardName:"Windmills2",
+            },
+            {
+                imageUrl:"../../assets/img/desert.svg",
+                cardName:"Dessert2",
             },
         ];
     }
@@ -31,7 +55,51 @@ export class CardsService {
         return [
             {
                 imageUrl:"../../assets/img/seven.svg",
-                cardName:"Seven",
+                cardName:"Seven1",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven2",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven3",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven4",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven5",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven6",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven7",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven8",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven9",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven10",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven11",
+            },
+            {
+                imageUrl:"../../assets/img/seven.svg",
+                cardName:"Seven12",
             },
         ];
     }

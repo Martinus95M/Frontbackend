@@ -2,14 +2,22 @@
     
     .gridcontainer{
         margin-top: 20vh;
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        grid-template-columns: auto auto auto;
 
         .griditem{
             position: relative;
             padding: 1em;
+            width: calc(25% - 1em);
+            transform: scale(1);
+
+            &:active {
+                transform: scale(0.97);
+                transition: transform .2s;
+            }
 
         }
     }
 }
+
