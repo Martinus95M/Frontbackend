@@ -34,7 +34,7 @@ export class CardComponent {
 
         // $event.addClass('no-show');
         // $('.cardback').toggleClass('no-show')
-        // $($event.currentTarget).toggleClass('flip');
+        $($event.currentTarget).toggleClass('flip');
     }
 
 
