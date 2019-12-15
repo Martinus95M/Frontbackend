@@ -19,7 +19,7 @@ export class CardComponent {
     onClick($event){
         console.log("clicked",$event);
 
-        $('img').addClass('no-show');
+        // $('img').addClass('no-show');
 
     }
 
