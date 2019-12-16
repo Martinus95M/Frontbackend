@@ -1,26 +1,36 @@
 .sc-card {
+    //memory-card
     position: relative;
     width: 100%;
     height: 100%;
     display: block;
+    transform-style: preserve-3d;
+    transition: transform .5s;
 
     img {
+        //back+frontface
         position: relative;
         width: 100%;
         height: auto;
+        backface-visibility: hidden;
 
         &:last-child{
+            //backface
             position: absolute;
             left: 0;
             top: 0;
             // z-index: -1;
             // display: block;
         }
+
+        &:first-child{
+            transform: rotateY(180deg)
+        }
     }
 }
 
 .flip {
-    transform: rotateY(180) !important;
-    background-color: red;
+    transform: rotateY(180deg) !important;
+    // background-color: red;
     
 }
