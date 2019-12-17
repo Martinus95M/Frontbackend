@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-
 import { AngularFireModule } from 'angularfire2'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
 import { config, from } from 'rxjs';
@@ -23,8 +22,7 @@ import { CardComponent } from "./memory/cards/card.component";
 import { CardsComponent } from "./memory/cards/cards.component";
 import { CardsService } from "./memory/cards/cards.service";
 
-
-
+import { ScoresComponent } from './scoreboard/scoreboard.component';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -41,6 +39,7 @@ var firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+    ScoresComponent,
     QuizUserComponent,
     HomeComponent,
     CardsComponent,
