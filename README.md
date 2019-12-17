@@ -27,8 +27,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## NPM List
+1. Lav root folder
 
-1. npm install ng-drag-drop --save
+2. opret gitclone til root folder
 
-2. npm install firebase angularfire2 --save
+3. Flyt indholdet af root older til en temp mappe
+
+4. lav nyt angular project i root folder
+
+5. flyt indholdet fra temp mappe til root folder / alle filer skal erstattes
+
+6. Install følgende
+
+    npm install ng-drag-drop --save
+
+    npm install firebase angularfire2 --save
+
+    npm install jquery --save
+
+    npm install -D @types/jquery
+
+    npm i --save @angular/material @angular/cdk @angular/animations
 
