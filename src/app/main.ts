@@ -1,7 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './quiz-play/app.module';
+import { AppModule } from './quiz-play/quiz-play.module';
 import { environment } from '../environments/environment';
 
 if (environment.production) {

@@ -3,8 +3,8 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 
 @Component({
   selector: 'app-root',
-  templateUrl: './quiz-play/quiz-play.component.html',
-  styleUrls: ['./quiz-play/quiz-play.component.scss']
+  templateUrl: './quiz-play/app.component.html',
+  styleUrls: ['./quiz-play/app.component.scss']
 })
 
 
@@ -18,7 +18,7 @@ export class AppComponent {
 
   dragField = [
     {
-      answer: '30% af al CO2 udledning',
+      answer: '20% af al CO2 udledning',
       return: false
     },
     {
