@@ -20,14 +20,14 @@ import { QuizUserComponent } from './quiz-user/quiz-user.component';
   declarations: [
     AppComponent,
     QuizUserComponent,
-    HomeComponent,
-    ReactiveFormsModule // Reactive forms module
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), // Main Angular fire module 
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ReactiveFormsModule // Reactive forms module
   ],
   providers: [],
   bootstrap: [AppComponent]
