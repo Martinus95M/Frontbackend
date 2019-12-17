@@ -12,11 +12,6 @@ import { config, from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { QuizUserComponent } from './quiz-user/quiz-user.component';
 
-
-import {MatCardModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {DragDropModule} from '@angular/cdk/drag-drop';
-
 //Memory Game
 import { MemoryComponent } from "./memory/memory.component";
 import { CardComponent } from "./memory/cards/card.component";
@@ -50,11 +45,8 @@ var firebaseConfig = {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(config),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    DragDropModule
   ],
   providers: [CardsService],
   bootstrap: [AppComponent]
