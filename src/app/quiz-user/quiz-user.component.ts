@@ -48,8 +48,8 @@ export class QuizUserComponent implements OnInit {
   } 
 
   submitUserData() {
-    this.crudApi.AddUser(this.userForm.value); // Submit student data using CRUD API
+    this.crudApi.AddUser(this.userForm.value); // Submit User data using CRUD API
     this.ResetForm();  // Reset form when clicked on reset button
   }
-
+  
 }
