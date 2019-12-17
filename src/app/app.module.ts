@@ -8,9 +8,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { config } from 'rxjs';
 
-import { ScoresComponent } from './scoreboard.component';
-import { routing } from './app.routing';
-
+import { ScoresComponent } from './scoreboard/scoreboard.component';
+import { routing } from './scoreboard/app.routing';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -27,7 +26,7 @@ var firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    ScoresComponent,
+    ScoresComponent
   ],
   imports: [
     BrowserModule,

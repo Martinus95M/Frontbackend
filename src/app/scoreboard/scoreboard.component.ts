@@ -7,6 +7,7 @@ interface Score {
     points: number;
 }
 @Component ({
+    // tslint:disable-next-line: component-selector
     selector: 'scores',
     templateUrl: './scoreboard.component.html'
 })
@@ -18,13 +19,14 @@ export class ScoresComponent {
     constructor(private afs: AngularFirestore, private _router: Router) {
     }
 
-    ngOnInit(){
+    // tslint:disable-next-line: use-lifecycle-interface
+    ngOnInit() {
         this.scoresCol = this.afs.collection('Scoreboard', ref => ref.orderBy('points', 'desc').limit(10));
         // this.scoresCol.orderBy('points > 100').limit(10);
         this.scores = this.scoresCol.valueChanges();
     }
 
-    add(){
+    add() {
         this._router.navigate(['add']);
     }
 }
