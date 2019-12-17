@@ -3,51 +3,51 @@ export class CardsService {
         return[
             {
                 imageUrl: "../../assets/img/beach.svg",
-                cardName: "Beach1",
+                cardName: "Beach",
             },
             {
                 imageUrl:"../../assets/img/iceberg.svg",
-                cardName:"Iceberg1",
+                cardName:"Iceberg",
             },
             {
                 imageUrl:"../../assets/img/mountains.svg",
-                cardName:"Mountains1",
+                cardName:"Mountains",
             },
             {
                 imageUrl:"../../assets/img/waterfall.svg",
-                cardName:"waterfall1",
+                cardName:"waterfall",
             },
             {
                 imageUrl:"../../assets/img/windmills.svg",
-                cardName:"Windmills1",
+                cardName:"Windmills",
             },
             {
                 imageUrl:"../../assets/img/desert.svg",
-                cardName:"Dessert1",
+                cardName:"Dessert",
             },
             {
                 imageUrl: "../../assets/img/beach.svg",
-                cardName: "Beach2",
+                cardName: "Beach",
             },
             {
                 imageUrl:"../../assets/img/iceberg.svg",
-                cardName:"Iceberg2",
+                cardName:"Iceberg",
             },
             {
                 imageUrl:"../../assets/img/mountains.svg",
-                cardName:"Mountains2",
+                cardName:"Mountains",
             },
             {
                 imageUrl:"../../assets/img/waterfall.svg",
-                cardName:"waterfall2",
+                cardName:"waterfall",
             },
             {
                 imageUrl:"../../assets/img/windmills.svg",
-                cardName:"Windmills2",
+                cardName:"Windmills",
             },
             {
                 imageUrl:"../../assets/img/desert.svg",
-                cardName:"Dessert2",
+                cardName:"Dessert",
             },
         ];
     }
