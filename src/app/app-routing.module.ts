@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { HomeComponent } from './home/home.component';
 import { QuizUserComponent } from './quiz-user/quiz-user.component';
 import { MemoryComponent } from './memory/memory.component';
