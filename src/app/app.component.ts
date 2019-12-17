@@ -4,7 +4,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 @Component({
   selector: 'app-root',
   templateUrl: './quiz-play/app.component.html',
-  styleUrls: ['./quiz-play/app.component.css']
+  styleUrls: ['./quiz-play/app.component.scss']
 })
 
 
