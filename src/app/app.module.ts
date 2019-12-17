@@ -18,7 +18,6 @@ import { CardsComponent } from "./memory/cards/cards.component";
 import { CardsService } from "./memory/cards/cards.service";
 
 import { ScoresComponent } from './scoreboard/scoreboard.component';
-import { routing } from './scoreboard/app.routing';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -40,15 +39,13 @@ var firebaseConfig = {
     HomeComponent,
     CardsComponent,
     CardComponent,
-    MemoryComponent,
+    MemoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule,
-    Scoreboard_branch,
-    routing
+    AngularFirestoreModule
   ],
   providers: [CardsService],
   bootstrap: [AppComponent]
