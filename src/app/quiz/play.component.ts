@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
   selector: 'app-root',
-  templateUrl: './quiz/score.component.html',
-  styleUrls: ['./quiz/score.component.scss']
+  templateUrl: './play.component.html',
+  styleUrls: ['./play.component.scss']
 })
 export class AppComponent {
   title = 'Frontbackend';
