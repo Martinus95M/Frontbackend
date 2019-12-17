@@ -8,13 +8,29 @@
         </div>
     </div>
     <div class="user">
-        <h1>Navn</h1>
-        <form action="">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="user">
-        </form>
-        <div>
-            <button type="button" class="btn btn-primary">Start</button>
-        </div>
+        <h1>Brugernavn</h1>
+        <!-- User form -->
+        <form [formGroup]="userForm" (ngSubmit)="submitUserData()" novalidate>
+            <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="row">
+        
+                    <div class="col-md-12 mb-3">
+                        <label>Brugernavn</label>
+                        <input type="text" formControlName="userName" class="form-control" required>
+                        <!-- Showing errors using getter method -->
+                        <p *ngIf="userName.touched && userName.invalid" class="error"><sup>*</sup>Please enter atleast user name</p>
+                        <p *ngIf="userName.errors?.minlength" class="error"><sup>*</sup>Name shouldn't be less than 3 words</p>
+                    </div>
+            
+                    <div class="form-group text-right">
+                    <button type="button" class="btn btn-secondary gap-right" (click)="ResetForm()">Reset</button>
+                    <button type="submit" class="btn btn-success" [disabled]="!userForm.valid">Add User</button>
+                    </div>
+        
+                </div>
+            </div>
+        </form><!-- User form ends-->
     </div>
 </div>
 

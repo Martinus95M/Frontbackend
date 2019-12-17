@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 
-import { AngularFireModule } from 'angularfire2'
-import { AngularFirestoreModule } from 'angularfire2/firestore'
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
 import { config, from } from 'rxjs';
 
 import { HomeComponent } from './home/home.component';
@@ -14,30 +16,18 @@ import { QuizUserComponent } from './quiz-user/quiz-user.component';
 
 
 
-
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyDe79_yh2eLtpVh21RNThvn_jFpaQLHUJ4",
-  authDomain: "frontbackend-db.firebaseapp.com",
-  databaseURL: "https://frontbackend-db.firebaseio.com",
-  projectId: "frontbackend-db",
-  storageBucket: "frontbackend-db.appspot.com",
-  messagingSenderId: "719115336887",
-  appId: "1:719115336887:web:c3110398222e324a182132"
-};
-
-
 @NgModule({
   declarations: [
     AppComponent,
     QuizUserComponent,
-    HomeComponent
+    HomeComponent,
+    ReactiveFormsModule // Reactive forms module
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(config),
-    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig), // Main Angular fire module 
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

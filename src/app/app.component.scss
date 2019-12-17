@@ -1,0 +1,17 @@
+header {
+    position: relative;
+    background: green;
+    nav {
+        display: block;
+        li {
+            list-style-type: none;
+            a {
+                i {
+                    color: white;
+                    font-size: 2em;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
