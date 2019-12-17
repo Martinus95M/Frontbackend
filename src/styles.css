@@ -3,5 +3,5 @@
 body, html, .mat-card, mat-card-title, mat-card-subtitle, .mat-card-subtitle {
   font-family: "Andale Mono", serif;
   background-color: RGBA(46, 49, 49, 1);
-  color: rgb(148, 28, 28);
+  color: white;
 }
