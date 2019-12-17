@@ -1,0 +1,32 @@
+.boks {
+    width: 90%;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid blue;
+    div {
+        
+        h1 {
+            text-align: center;
+        }
+        
+        div {
+            display: flex;
+            justify-content: space-around;
+            button {
+                margin: 1rem;
+            }
+        }
+    }
+    .user {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
