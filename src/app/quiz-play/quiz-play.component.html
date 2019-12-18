@@ -1,7 +1,13 @@
+<header>
+  <nav>
+      <a routerLink=""><i class="fas fa-times"></i></a>
+  </nav>
+</header>
+
 <div class="container">
     <h1>{{title}}</h1>
-    <h2 class="currentQuizRound">1.</h2>
-    <h2 class="currentQuizPoints">500</h2>
+    <p class="currentQuizRound">Spørgsmål 1.</p>
+    <p class="currentQuizPoints">Points: 500</p>
   
     <div class="list-container">
   
@@ -12,7 +18,7 @@
              [cdkDropListData]="dropField"
              [cdkDropListConnectedTo]="[pullList]"
              (cdkDropListDropped)="onDrop($event)">
-          <h2>Træk dit svar til denne boks</h2>
+          <h2>Træk dit svar her til</h2>
           <mat-card *ngFor="let released of dropField" cdkDrag>
             <mat-card-header>
               <mat-card-title>{{released.answer}}</mat-card-title>

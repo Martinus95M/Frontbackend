@@ -1,0 +1,29 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+table {
+    color: white;
+    border: none;
+    thead {
+        border: none;
+        tr {
+            border: none;
+            th {
+                border: none;
+                text-align: center;
+            }
+        }
+    }
+    tbody {
+        border: none;
+        tr {
+            border: none;
+            td {
+                border: none;
+                text-align: center;
+            }
+        }
+    }
+}

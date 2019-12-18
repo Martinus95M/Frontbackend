@@ -1,22 +1,22 @@
 .boks {
-    width: 90%;
+    width: 100%;
     padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid blue;
+    transform: translateY(30%);
     div {
-        
-        h1 {
+        color: white;
+        h1, p, span {
             text-align: center;
         }
         
         div {
             display: flex;
             justify-content: space-around;
+            width: 100%;
             button {
-                margin: 1rem;
+                margin: .5rem;
+                background-color: #252d54;
+                border: none;
+                padding: 1rem 4rem;
             }
         }
     }

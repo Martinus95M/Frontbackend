@@ -1,10 +1,16 @@
 .container {
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
     
     .gridcontainer{
         // memory-game
         margin-top: 20vh;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
         perspective: 1000px;
         
@@ -20,6 +26,17 @@
                 transition: transform .2s;
             }
 
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        .gridcontainer {
+            .griditem {
+                width: calc(18% - 1em);
+            }
         }
     }
 }

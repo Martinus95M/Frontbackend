@@ -9,7 +9,8 @@ interface Score {
 @Component ({
     // tslint:disable-next-line: component-selector
     selector: 'scores',
-    templateUrl: './scoreboard.component.html'
+    templateUrl: './scoreboard.component.html',
+    styleUrls: ['./scoreboard.component.scss']
 })
 export class ScoresComponent {
 

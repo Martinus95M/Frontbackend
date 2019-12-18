@@ -5,3 +5,25 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background: rgb(100,147,235);
+    background: -moz-linear-gradient(0deg, rgba(100,147,235,1) 0%, rgba(65,177,191,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(100,147,235,1) 0%, rgba(65,177,191,1) 100%);
+    background: linear-gradient(0deg, rgba(100,147,235,1) 0%, rgba(65,177,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6493eb",endColorstr="#41b1bf",GradientType=1);
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    nav {
+        text-align: right;
+        a {
+            i {
+                color: white;
+                font-size: 3em;
+                padding: 1rem;
+            }
+        }
+    }
+}
