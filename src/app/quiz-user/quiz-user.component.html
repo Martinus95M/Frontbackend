@@ -18,12 +18,16 @@
         <p>Quiz</p>
         <h1>Brugernavn</h1>
         <p>Skriv dit Brugernavn her</p>
-        <form action="">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="user">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input [(ngModel)]="user.name" type="text" class="form-control" formControlName="username">
+                <div *ngIf="form.controls.username.touched && !form.controls.username.valid" class="alert alert-danger">
+                    Username is required
+                </div>
+            </div>
+            <button [disabled]="!form.valid" routerLink="../quiz-play" type="button" class="btn btn-primary" type="submit">Start</button>
         </form>
-        <div>
-            <button routerLink="../quiz-play" type="button" class="btn btn-primary">Start</button>
-        </div>
     </div>
 </div>
 

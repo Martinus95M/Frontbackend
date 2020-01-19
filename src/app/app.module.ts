@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
 import { config, from } from 'rxjs';
+import { environment } from '../environments/environment'
 
 import { HomeComponent } from './home/home.component';
 import { QuizUserComponent } from './quiz-user/quiz-user.component';
@@ -24,7 +25,7 @@ import { CardsService } from "./memory/cards/cards.service";
 
 import { ScoresComponent } from './scoreboard/scoreboard.component';
 
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,11 +41,12 @@ import { ScoresComponent } from './scoreboard/scoreboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     BrowserAnimationsModule,
     MatCardModule,
-    DragDropModule
+    DragDropModule,
+    ReactiveFormsModule
   ],
   providers: [CardsService],
   bootstrap: [AppComponent]
